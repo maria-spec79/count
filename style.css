@@ -1,0 +1,115 @@
+@font-face {
+	font-family: PocketCalculator-qjd;
+	src: url(PocketCalculator-qjd.ttf);
+	display: swap;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+}
+
+.choice {
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+}
+
+.choice-color {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	/*outline: 1px solid white;
+	outline-offset: -4px;*/
+	border: 7px solid #f5f5f5;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.choice-color_gray {
+	background-color: lightgray;
+}
+
+.choice-color_khaki {
+	background-color: khaki;
+	/*outline-color: black;*/
+	border-color: khaki;
+}
+
+.choice-color_palegreen {
+	background-color: #CCFDCC;
+}
+
+.choice-color_plum {
+	background-color: #E7BDE7;
+}
+
+.choice-color_black {
+	background-color: #1a1a1a;
+}
+
+input[type="radio"] {
+	opacity: 0;
+}
+
+.wrapper {
+	width: 240px;
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 2px;
+	background-color: khaki;
+	box-shadow: 0 3px 3px #575555;
+}
+
+input[type="text"] {
+	width: 230px;
+	text-align: right;
+	margin-bottom: 10px;
+	font-size: 42px;
+	line-height: 50px;
+	padding-right: 8px;
+	border-radius: 2px;
+	box-shadow: inset 0 3px 3px #575555;
+	background-color: #eee;
+	text-indent: 16px;
+	font-family: PocketCalculator-qjd;
+}
+
+button {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 3px 3px #575555; 
+	margin: 5px;
+	font-size: 20px;
+	background-color: #D8CF7E;
+}
+
+#clear {
+	margin-right: 160px;
+}
+
+button:hover {
+	box-shadow: inset 0 3px 3px #575555; 
+}
+
+@media(max-width: 320px) {
+
+body {
+	flex-direction: column;
+}
+
+.choice {
+	width: 100%;
+	height: 80px;
+	flex-direction: row;
+}
+
+.choice-color {
+	margin-right: 10px;
+}
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="calculator_14445.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Count everything!</title>
+</head>
+
+<body>
+	<div class="choice">
+		<label class="choice-color choice-color_gray" for="gray">
+			<input type="radio" name="color" id="gray" onclick="chooseGray()">
+		</label>
+		<label class="choice-color choice-color_khaki" for="khaki">
+			<input type="radio" name="color" id="khaki" checked  onclick="chooseKhaki()">
+		</label>
+		<label class="choice-color choice-color_palegreen" for="palegreen">
+			<input type="radio" name="color" id="palegreen" onclick="choosePalegreen()">
+		</label>
+		<label class="choice-color choice-color_plum" for="plum">
+			<input type="radio" name="color" id="plum" onclick="choosePlum()">
+		</label>
+		<label class="choice-color choice-color_black" for="black">
+			<input type="radio" name="color" id="black" onclick="chooseBlack()">
+		</label>
+	</div>
+
+	<div class="wrapper">
+		<input type="text" id="input" value="" placeholder="" autofocus="true">
+		<button id="clear" onclick="clearInput()">C</button>
+		<button onclick="addDigit(this)">1</button>
+		<button onclick="addDigit(this)">2</button>
+		<button onclick="addDigit(this)">3</button>
+		<button onclick="getSign(this)">+</button>
+		<button onclick="addDigit(this)">4</button>
+		<button onclick="addDigit(this)">5</button>
+		<button onclick="addDigit(this)">6</button>
+		<button onclick="getSign(this)">-</button>
+		<button onclick="addDigit(this)">7</button>
+		<button onclick="addDigit(this)">8</button>
+		<button onclick="addDigit(this)">9</button>
+		<button onclick="getSign(this)">*</button>
+		<button onclick="addDigit(this)">0</button>
+		<button onclick="addComma()">,</button>
+		<button onclick="getResult()">=</button>
+		<button onclick="getSign(this)">/</button>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
